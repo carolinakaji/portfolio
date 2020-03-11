@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Carol Kaji Front End Developer</title>
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/08ee42e017.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Mobile First -->
+  <header>
+    <nav class="menu-wraper">
+      <a href="index.html" class="logo">Carol Kaji</a>
+      <!-- Checkbox para ser cliclável e ativar o toggle. Importante ter a label com for direcionando ao id do checkbox -->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+
+      <!-- Lista com os links do menu -->
+      <ul class="menu">
+        <li><a href="#section-a">Sobre</a></li>
+        <li><a href="#section-b">Habilidades</a></li>
+        <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#section-c">Me encontre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Seção Introdução -->
+    <section id="showcase" class="grid">
+      <div id="bg-image"></div>
+      <div class="content-wrap">
+        <img src="img/me-200px.png" class="img-round">
+        <h1>Hi there, eu sou Carolina</h1>
+        <p>Bem vindo(a) ao meu mundo na web.</p>
+        <a href="#section-b" class="btn">Saiba Mais</a>
+      </div>
+    </section>
+
+    <!-- Seção A - Sobre-->
+    <section id="section-a" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title" id="sobre">Sobre</h2>
+        <div class="content-text">
+          <p>Este portfólio pertence a Carol, uma desenvolvedora front end em formação!</p>
+          <p>Aqui você encotrará informações sobre mim e <a href="#portfolio">projetos realizados</a>.</p>
+          <p>Eu sou estudante do segundo semestre no curso de <a href="https://www.fatecsaoroque.edu.br/sistemas.html?"
+              target="_blank">Sistemas para Internet</a> na <a href="https://www.fatecsaoroque.edu.br/"
+              target="_blank">Fatec</a>.</p>
+          <p>Estou em busca de trabalhar com algo que me faz feliz, que me proporciona desafios e aprendizado. E aqui
+            estou, nessa jornada de me tornar dev front end!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B - Habilidades-->
+    <section id="section-b" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title" id="habilidades">Habilidades</h2>
+        <ul>
+          <!-- HTML -->
+          <li class="grid-2 habilidades-linguagem">
+            <div class="card">
+              <i class="fab fa-html5 fa-big"></i>
+              <h3 class="card-title">HTML</h3>
+            </div>
+            <div class="card-content">
+              <ul class="habilidades-descricao">
+                <li>Nível intermediário.</li>
+                <li>Uso de HTML semântico nos projetos.</li>
+              </ul>
+            </div>
+          </li>
+          <!-- CSS -->
+          <li class="grid-2 habilidades-linguagem">
+            <div class="card">
+              <i class="fab fa-css3-alt fa-big"></i>
+              <h3 class="card-title">CSS</h3>
+            </div>
+            <div class="card-content">
+              <ul class="habilidades-descricao">
+                <li>Nível intermediário.</li>
+                <li>Uso de Grid para layouts organizados.</li>
+                <li>Uso de Layouts responsivos - Mobile First.</li>
+              </ul>
+            </div>
+          </li>
+          <!-- JavaScript -->
+          <li class="grid-2 habilidades-linguagem">
+            <div class="card">
+              <i class="fab fa-js fa-big"></i>
+              <h3 class="card-title">JavaScript</h3>
+            </div>
+            <div class="card-content">
+              <ul class="habilidades-descricao">
+                <li>Nível básico.</li>
+                <li>Uso para tornar o site dinâmico.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section C - Portfolio -->
+    <section id="section-c" class="grid">
+      <article class="gallery"></article>
+      <article class="gallery"></article>
+      <article class="gallery"></article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <section id="section-e" class="grid">
+        <div class="content-wrap">
+          <!-- <div class="form-wrap">
+          <h2 class="content-title">Contato</h2>
+          <form action="" method="POST">
+            <div><p><label>Nome:</label></p><input type="text" name="nome"></div>
+            <div>
+              <p><label>E-mail:</label></p><input type="email" name="email">
+            </div>
+            <div>
+              <p><label>Me escreva algo:</label></p>
+              <textarea cols="22"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="grid" id="section-f">
+      <div class="content-wrap"> -->
+          <h2 class="content-title" id="encontre">Me encontre</h2>
+
+          <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/carolina-kaji-88520915b/" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/carolinakaji" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/carol85_k/" target=_blank><i class="fab fa-instagram"></i></a></li>
+        </div>
+      </section>
+      <small>&copy; 2020 | Criado por <a href="https://github.com/carolinakaji" target="_blank">Carol Kaji</a> </small>
+    </footer>
+  </main>
+
+</body>
+
+</html>

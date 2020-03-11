@@ -1,0 +1,157 @@
+a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.menu-wraper {
+  background: #3a3a3a;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  font-size: 1.2em;
+  z-index: 3;
+  position: fixed;
+}
+
+.menu-wraper {
+  background: #3a3a3a;
+  /* padding-top: 10px; */
+}
+
+.menu-wraper ul {
+  overflow: hidden;
+}
+
+.menu-wraper ul li {
+  list-style: none;
+  border-bottom: 1px solid rgb(94, 94, 94);
+}
+.menu-wraper ul li:last-child {
+border-bottom: none;
+}
+
+.menu-wraper ul a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  font-family: 'Poppins', 'sans-serif', 'Liberation sans';
+}
+
+
+.logo {
+  float: left;
+  display: block;
+  font-size: 1.4em;
+  padding: 15px 30px;
+  color: white;
+  font-family: 'Poppins', 'sans-serif', 'Liberation sans';
+}
+
+header ul a:hover {
+  background: rgb(82, 82, 82);
+  color: #40e0d0;
+}
+
+.menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  background: #3a3a3a;
+}
+
+.menu-wraper .menu-icon {
+  padding: 33px 30px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.menu-wraper .menu-icon .nav-icon {
+  position: relative;
+  background: #fff;
+  height: 2px;
+  display: block;
+  width: 24px;
+  transition: background .2s ease-out;
+}
+
+.menu-wraper .menu-icon .nav-icon:before {
+  content: "";
+  background: #fff;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  transition: all .2s ease-out;
+}
+
+.menu-wraper .menu-icon .nav-icon:after {
+  content: "";
+  background: #fff;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -8px;
+  transition: all .2s ease-out;
+}
+
+header .menu-btn {
+  display: none;
+}
+
+header .menu-btn:checked~.menu {
+  max-height: 350px;
+}
+
+header .menu-btn:checked~.menu-icon .nav-icon {
+  background: transparent;
+}
+
+header .menu-btn:checked~.menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+header .menu-btn:checked~.menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 796px) {
+  header .menu li {
+    float: left;
+    padding-right: 20px;
+  }
+
+  header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    margin-top:0; 
+    padding: 10px;
+  }
+
+  header .menu-icon {
+    display: none;
+  }
+
+
+  .menu a {
+    display: inline-block;
+  }
+
+  .menu a:hover {
+    background: transparent;
+  }
+
+  .menu-wraper ul li {
+    border-bottom: none;
+  }
+
+}
